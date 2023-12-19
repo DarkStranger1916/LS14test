@@ -1,0 +1,41 @@
+[log]
+path = "logs"
+format = "log_%(date)s-%(time)s.txt"
+level = 1
+enabled = false
+
+[net]
+tickrate = 30
+port = 1212
+bindto = "::,0.0.0.0"
+max_connections = 52
+soft_max_players = 40
+map_rotation = true
+
+[status]
+# The status server is the TCP side, used by the launcher to determine engine version, etc.
+# To be clear: Disabling it makes the launcher unable to connect!
+enabled = true
+
+[game]
+hostname = "[RU][MRP+][18+]Space Craft 14"
+desc = "Добро пожаловать на Space Craft - игровой 18+ MRP+ сервер! \n Наша текущая сборка взята от ныне почившего сервера Lust Station, у нас много новых рас и ролей, а также дополнительная одежда. Присоединяйся и играй с нами."
+
+[console]
+loginlocal = true
+
+[hub]
+advertise = false
+tags = "lang:ru, HRP, 18+"
+server_url = ""
+hub_urls = "https://central.spacestation14.io/hub/"
+
+[infolinks]
+discord = "https://discord.gg/BvJUmcCK8z"
+wiki = "https://station14.ru/wiki/%D0%97%D0%B0%D0%B3%D0%BB%D0%B0%D0%B2%D0%BD%D0%B0%D1%8F_%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D0%B0"
+
+[auth]
+# 0 = Optional, 1 = Required, 2 = Disabled
+mode = 1
+# server = https://central.spacestation14.io/auth/
+
