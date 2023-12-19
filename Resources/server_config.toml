@@ -8,7 +8,6 @@ enabled = false
 tickrate = 30
 port = 1212
 bindto = "::,0.0.0.0"
-map_rotation = true
 
 [status]
 # The status server is the TCP side, used by the launcher to determine engine version, etc.
@@ -26,7 +25,7 @@ role_timers = true
 lobbyenabled = true
 
 [rules]
-time = 120.0
+time = 10.0
 
 [queue]
 enabled = true
