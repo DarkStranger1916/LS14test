@@ -8,8 +8,6 @@ enabled = false
 tickrate = 30
 port = 1212
 bindto = "::,0.0.0.0"
-max_connections = 52
-soft_max_players = 40
 map_rotation = true
 
 [status]
@@ -20,12 +18,24 @@ enabled = true
 [game]
 hostname = "[RU][MRP+][18+]Space Craft 14"
 desc = "Добро пожаловать на Space Craft - игровой 18+ MRP+ сервер! \n Наша текущая сборка взята от ныне почившего сервера Lust Station, у нас много новых рас и ролей, а также дополнительная одежда. Присоединяйся и играй с нами."
+max_connections = 52
+soft_max_players = 40
+map_pool = "DefaultMapPool"
+map_rotation = true
+role_timers = true
+lobbyenabled = true
+
+[rules]
+time = 120.0
+
+[queue]
+enabled = true
 
 [console]
 loginlocal = true
 
 [hub]
-advertise = false
+advertise = true
 tags = "lang:ru,rp:med,18+"
 server_url = ""
 hub_urls = "https://central.spacestation14.io/hub/"
@@ -39,3 +49,11 @@ wiki = "https://station14.ru/wiki/%D0%97%D0%B0%D0%B3%D0%BB%D0%B0%D0%B2%D0%BD%D0%
 mode = 1
 # server = https://central.spacestation14.io/auth/
 
+[shuttle]
+grid_fill = true
+auto_call_time = 120
+emergency = true
+arrivals = true
+
+[admin]
+see_own_notes = true
