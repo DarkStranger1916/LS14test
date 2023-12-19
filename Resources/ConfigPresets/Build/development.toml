@@ -8,7 +8,6 @@ enabled = false
 tickrate = 30
 port = 1212
 bindto = "::,0.0.0.0"
-map_rotation = true
 
 [status]
 # The status server is the TCP side, used by the launcher to determine engine version, etc.
