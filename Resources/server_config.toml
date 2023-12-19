@@ -8,6 +8,7 @@ enabled = false
 tickrate = 30
 port = 1212
 bindto = "::,0.0.0.0"
+max_connections = 52
 
 [status]
 # The status server is the TCP side, used by the launcher to determine engine version, etc.
@@ -17,12 +18,12 @@ enabled = true
 [game]
 hostname = "[RU][MRP+][18+]Space Craft 14"
 desc = "Добро пожаловать на Space Craft - игровой 18+ MRP+ сервер! \n Наша текущая сборка взята от ныне почившего сервера Lust Station, у нас много новых рас и ролей, а также дополнительная одежда. Присоединяйся и играй с нами."
-max_connections = 52
-soft_max_players = 40
 map_pool = "DefaultMapPool"
 map_rotation = true
 role_timers = true
 lobbyenabled = true
+soft_max_players = 40
+maxplayers = 52
 
 [rules]
 time = 10.0
