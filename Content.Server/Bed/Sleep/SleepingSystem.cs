@@ -1,6 +1,6 @@
-using Content.Server.Actions;
 using Content.Server.Popups;
 using Content.Server.Sound.Components;
+using Content.Shared.Actions;
 using Content.Shared.Audio;
 using Content.Shared.Bed.Sleep;
 using Content.Shared.Damage;
@@ -13,10 +13,12 @@ using Content.Shared.Slippery;
 using Content.Shared.StatusEffect;
 using Content.Shared.Stunnable;
 using Content.Shared.Verbs;
+using Robust.Shared.Audio;
 using Robust.Shared.Player;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Random;
 using Robust.Shared.Timing;
+using Robust.Shared.Network;
 
 namespace Content.Server.Bed.Sleep
 {
@@ -25,6 +27,7 @@ namespace Content.Server.Bed.Sleep
         [Dependency] private readonly IGameTiming _gameTiming = default!;
         [Dependency] private readonly IRobustRandom _robustRandom = default!;
         [Dependency] private readonly PopupSystem _popupSystem = default!;
+        [Dependency] private readonly SharedActionsSystem _actionsSystem = default!;
         [Dependency] private readonly SharedAudioSystem _audio = default!;
         [Dependency] private readonly StatusEffectsSystem _statusEffectsSystem = default!;
 
@@ -36,6 +39,7 @@ namespace Content.Server.Bed.Sleep
             SubscribeLocalEvent<MobStateComponent, SleepStateChangedEvent>(OnSleepStateChanged);
             SubscribeLocalEvent<SleepingComponent, DamageChangedEvent>(OnDamageChanged);
             SubscribeLocalEvent<MobStateComponent, SleepActionEvent>(OnSleepAction);
+            SubscribeLocalEvent<ActionsContainerComponent, SleepActionEvent>(OnBedSleepAction);
             SubscribeLocalEvent<MobStateComponent, WakeActionEvent>(OnWakeAction);
             SubscribeLocalEvent<SleepingComponent, MobStateChangedEvent>(OnMobStateChanged);
             SubscribeLocalEvent<SleepingComponent, GetVerbsEvent<AlternativeVerb>>(AddWakeVerb);
@@ -91,6 +95,11 @@ namespace Content.Server.Bed.Sleep
         private void OnSleepAction(EntityUid uid, MobStateComponent component, SleepActionEvent args)
         {
             TrySleeping(uid);
+        }
+
+        private void OnBedSleepAction(EntityUid uid, ActionsContainerComponent component, SleepActionEvent args)
+        {
+            TrySleeping(args.Performer);
         }
 
         private void OnWakeAction(EntityUid uid, MobStateComponent component, WakeActionEvent args)
@@ -176,13 +185,11 @@ namespace Content.Server.Bed.Sleep
         public bool TrySleeping(EntityUid uid)
         {
             if (!HasComp<MobStateComponent>(uid))
+            {
                 return false;
-
+            }
             var tryingToSleepEvent = new TryingToSleepEvent(uid);
             RaiseLocalEvent(uid, ref tryingToSleepEvent);
-            if (tryingToSleepEvent.Cancelled)
-                return false;
-
             EnsureComp<SleepingComponent>(uid);
             return true;
         }
