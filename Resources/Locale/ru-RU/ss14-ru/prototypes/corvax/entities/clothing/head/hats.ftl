@@ -1,9 +1,9 @@
 ent-ClothingHeadCapCentcomBlack = фуражка офицера специальных операций
-    .desc = Специальная фуражка высших чинов Qillu с золотой гравировкой, уже давно прошедшая не один блицкриг...
+    .desc = Специальная фуражка высших чинов NanoTransen с золотой гравировкой, уже давно прошедшая не один блицкриг...
 ent-ClothingHeadCapCentcomNaval = флотская фуражка
-    .desc = Фуражка, которую носят на флоте Qillu.
+    .desc = Фуражка, которую носят на флоте NanoTransen.
 ent-ClothingHeadHatBeretCentcomNaval = флотский берет
-    .desc = Берет, который носят на флоте Qillu.
+    .desc = Берет, который носят на флоте NanoTransen.
 ent-ClothingHeadHatERTLeaderBeret = берет лидера
     .desc = Синий берет из дюраткани со значком из золота, обозначающим его владельца как лидера ОБР.
 ent-ClothingHeadHatCapHoS = фуражка главы службы безопасности

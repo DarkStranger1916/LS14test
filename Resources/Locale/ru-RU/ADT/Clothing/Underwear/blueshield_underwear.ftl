@@ -1,11 +1,11 @@
 ent-ADTClothingUnderwearBottomBoxersBlueshield = трусы офицера "Синего Щита"
-    .desc = Стандартное белье Qillu для офицеров "Синего Щита"
+    .desc = Стандартное белье NanoTransen для офицеров "Синего Щита"
 
 ent-ADTClothingUnderwearTopBraBlueshield = бра офицера "Синего Щита"
-    .desc = Стандартное белье Qillu для офицеров "Синего Щита" женского пола
+    .desc = Стандартное белье NanoTransen для офицеров "Синего Щита" женского пола
 
 ent-ADTClothingUnderwearBottomPantiesBlueshield = трусики офицера "Синего Щита"
-    .desc = Стандартное белье Qillu для офицеров "Синего Щита" женского пола
+    .desc = Стандартное белье NanoTransen для офицеров "Синего Щита" женского пола
 
 ent-ADTClothingUnderwearBottomMonokiniBlack = низ черного монокини
     .desc = низ монокини, черного цвета

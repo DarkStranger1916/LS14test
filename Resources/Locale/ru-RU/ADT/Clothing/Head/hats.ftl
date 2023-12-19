@@ -21,5 +21,5 @@ ent-ADTClothingHeadHatsJohanCap = фуражка Йохана
     .suffix = { "" }
 
 ent-ADTClothingHeadHatsInvestigatorCap = фуражка следователя Службы Безопасности
-    .desc = Слава Qillu!
+    .desc = Слава NanoTransen!
     .suffix = { "" }
