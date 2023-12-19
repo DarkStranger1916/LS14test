@@ -26,7 +26,7 @@ loginlocal = true
 
 [hub]
 advertise = false
-tags = "lang:ru, HRP, 18+"
+tags = "lang:ru,rp:med,18+"
 server_url = ""
 hub_urls = "https://central.spacestation14.io/hub/"
 
