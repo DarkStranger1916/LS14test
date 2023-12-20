@@ -86,7 +86,17 @@
     - type: Construction
       graph: PlushieGhostRevenant
       node: plushie
-
+      
+- type: entity
+  parent: PlushieGhost
+  id: PlushieMelissa
+  name: Плюшевая Мелисса
+  description: Увидев данную плюшевую игрушку, вы наверняка захотите проверить наличие накладных в шкафчике, а также материалов на складе. От неё исходит приятный аромат корицы.
+  components:
+    - type: Sprite
+      sprite: /Textures/CustomeSprites/Fun/Toys/QM`s.rsi
+      state: melissa_plushie
+      
 - type: entity
   parent: BasePlushie
   id: PlushieBee

@@ -8,6 +8,17 @@
     sprite: Clothing/Head/Hats/beaver_hat.rsi
   - type: Clothing
     sprite: Clothing/Head/Hats/beaver_hat.rsi
+    
+- type: entity
+  parent: ClothingHeadBase
+  id: ClothingHeadHatBeretCargo
+  name: Берет поставок
+  description: Опять работа?
+  components:
+  - type: Sprite
+    sprite: /Textures/CustomeSprite/Clothing/Head/Hats/Berets/QM`s-beret.rsi
+  - type: Clothing
+    sprite: /Textures/CustomeSprite/Clothing/Head/Hats/Berets/QM`s-beret.rsi
 
 - type: entity
   parent: ClothingHeadBase
