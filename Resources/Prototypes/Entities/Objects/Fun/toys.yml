@@ -97,7 +97,7 @@
       sprite: /Textures/CustomeSprites/Fun/Toys/QM`s.rsi
       state: melissa_plushie
    - type: StaticPrice
-     price: 50    
+     price: 500   
       
 - type: entity
   parent: BasePlushie
