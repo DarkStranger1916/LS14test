@@ -40,7 +40,7 @@ loginlocal = true
 
 [hub]
 advertise = true
-tags = "lang:ru,HRP,18+"
+tags = "lang:ru,HRP,18+,ERP"
 server_url = ""
 hub_urls = "https://central.spacestation14.io/hub/"
 
