@@ -8,7 +8,7 @@ enabled = false
 tickrate = 30
 port = 1212
 bindto = "::,0.0.0.0"
-max_connections = 36
+max_connections = 60
 
 [ic]
 
@@ -20,14 +20,14 @@ flavor_text = true
 enabled = true
 
 [game]
-hostname = "[RU][HRP][18+]КосмиКрафт"
-desc = "Добро пожаловать на КосмиКрафт - игровой 18+ MRP+ сервер! \nНаша текущая сборка взята от ныне почившего сервера Lust Station, у нас много новых рас и ролей, а также дополнительная одежда. \nПрисоединяйся и играй с нами."
+hostname = "[RU][MRP][18+]КосмиКрафт"
+desc = "Добро пожаловать на КосмиКрафт - игровой 18+ MRP+ сервер! \nНаша текущая сборка взята от ныне почившего сервера Lust Station \nУ нас много новых рас и ролей, дополнительная одежда. \nДанный сервер является ответвлением от основного. Сервер может внезапно выключатся и перезапускаться. Однако! Обновления и новый контент будут появлятся здесь первыми! Уровень РП понижен. \nПрисоединяйся и играй с нами."
 map_pool = "DefaultMapPool"
 map_rotation = true
 role_timers = true
 lobbyenabled = true
-soft_max_players = 30
-maxplayers = 36
+soft_max_players = 50
+maxplayers = 60
 
 [rules]
 time = 10.0
@@ -39,8 +39,8 @@ enabled = true
 loginlocal = true
 
 [hub]
-advertise = true
-tags = "lang:ru,rp:hard,18+"
+advertise = false
+tags = "lang:ru,HRP,18+"
 server_url = ""
 hub_urls = "https://central.spacestation14.io/hub/"
 
