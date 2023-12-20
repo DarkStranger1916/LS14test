@@ -8,7 +8,7 @@ enabled = false
 tickrate = 30
 port = 1212
 bindto = "::,0.0.0.0"
-max_connections = 52
+max_connections = 36
 
 [ic]
 
@@ -26,8 +26,8 @@ map_pool = "DefaultMapPool"
 map_rotation = true
 role_timers = true
 lobbyenabled = true
-soft_max_players = 40
-maxplayers = 52
+soft_max_players = 30
+maxplayers = 36
 
 [rules]
 time = 10.0
