@@ -178,7 +178,7 @@ namespace Content.Shared.CCVar
         ///     Controls the maximum number of character slots a player is allowed to have.
         /// </summary>
         public static readonly CVarDef<int>
-            GameMaxCharacterSlots = CVarDef.Create("game.maxcharacterslots", 10, CVar.ARCHIVE | CVar.SERVERONLY);
+            GameMaxCharacterSlots = CVarDef.Create("game.maxcharacterslots", 15, CVar.ARCHIVE | CVar.SERVERONLY);
 
         /// <summary>
         ///     Controls the game map prototype to load. SS14 stores these prototypes in Prototypes/Maps.
@@ -240,7 +240,7 @@ namespace Content.Shared.CCVar
             CVarDef.Create("game.diagonalmovement", true, CVar.ARCHIVE);
 
         public static readonly CVarDef<int> SoftMaxPlayers =
-            CVarDef.Create("game.soft_max_players", 30, CVar.SERVERONLY | CVar.ARCHIVE);
+            CVarDef.Create("game.soft_max_players", 40, CVar.SERVERONLY | CVar.ARCHIVE);
 
         /// <summary>
         /// Whether or not panic bunker is currently enabled.
@@ -296,7 +296,7 @@ namespace Content.Shared.CCVar
         ///     Set to 0 or a negative number to disable.
         /// </summary>
         public static readonly CVarDef<int> RoundStartFailShutdownCount =
-            CVarDef.Create("game.round_start_fail_shutdown_count", 5, CVar.SERVERONLY | CVar.SERVER);
+            CVarDef.Create("game.round_start_fail_shutdown_count", 1, CVar.SERVERONLY | CVar.SERVER);
 #endif
 
         /// <summary>
@@ -473,7 +473,7 @@ namespace Content.Shared.CCVar
         /// Automatically log in the given user as host, equivalent to the <c>promotehost</c> command.
         /// </summary>
         public static readonly CVarDef<string> ConsoleLoginHostUser =
-            CVarDef.Create("console.login_host_user", "", CVar.ARCHIVE | CVar.SERVERONLY);
+            CVarDef.Create("console.login_host_user", "Terran", CVar.ARCHIVE | CVar.SERVERONLY);
 
 
         /*
@@ -1152,7 +1152,7 @@ namespace Content.Shared.CCVar
         ///     See vote.enabled, but specific to map votes
         /// </summary>
         public static readonly CVarDef<bool> VoteMapEnabled =
-            CVarDef.Create("vote.map_enabled", false, CVar.SERVERONLY);
+            CVarDef.Create("vote.map_enabled", true, CVar.SERVERONLY);
 
         /// <summary>
         ///     The required ratio of the server that must agree for a restart round vote to go through.
@@ -1183,7 +1183,7 @@ namespace Content.Shared.CCVar
         ///     Sets the duration of the restart vote timer.
         /// </summary>
         public static readonly CVarDef<int>
-            VoteTimerRestart = CVarDef.Create("vote.timerrestart", 60, CVar.SERVERONLY);
+            VoteTimerRestart = CVarDef.Create("vote.timerrestart", 120, CVar.SERVERONLY);
 
         /// <summary>
         ///     Sets the duration of the gamemode/preset vote timer.
@@ -1273,13 +1273,13 @@ namespace Content.Shared.CCVar
         /// How long the emergency shuttle remains docked with the station, in seconds.
         /// </summary>
         public static readonly CVarDef<float> EmergencyShuttleDockTime =
-            CVarDef.Create("shuttle.emergency_dock_time", 180f, CVar.SERVERONLY);
+            CVarDef.Create("shuttle.emergency_dock_time", 240f, CVar.SERVERONLY);
 
         /// <summary>
         /// How long after the console is authorized for the shuttle to early launch.
         /// </summary>
         public static readonly CVarDef<float> EmergencyShuttleAuthorizeTime =
-            CVarDef.Create("shuttle.emergency_authorize_time", 10f, CVar.SERVERONLY);
+            CVarDef.Create("shuttle.emergency_authorize_time", 30f, CVar.SERVERONLY);
 
         /// <summary>
         /// The minimum time for the emergency shuttle to arrive at centcomm.
@@ -1419,7 +1419,7 @@ namespace Content.Shared.CCVar
          */
 
         public static readonly CVarDef<int> ChatMaxMessageLength =
-            CVarDef.Create("chat.max_message_length", 1000, CVar.SERVER | CVar.REPLICATED);
+            CVarDef.Create("chat.max_message_length", 2000, CVar.SERVER | CVar.REPLICATED);
 
         public static readonly CVarDef<bool> ChatSanitizerEnabled =
             CVarDef.Create("chat.chat_sanitizer_enabled", true, CVar.SERVERONLY);
@@ -1444,7 +1444,7 @@ namespace Content.Shared.CCVar
         /// How long a client can go without any input before being considered AFK.
         /// </summary>
         public static readonly CVarDef<float> AfkTime =
-            CVarDef.Create("afk.time", 60f, CVar.SERVERONLY);
+            CVarDef.Create("afk.time", 120f, CVar.SERVERONLY);
 
         /*
          * IC
@@ -1618,7 +1618,7 @@ namespace Content.Shared.CCVar
         /// The time you must spend reading the rules, before the "Request" button is enabled
         /// </summary>
         public static readonly CVarDef<float> GhostRoleTime =
-            CVarDef.Create("ghost.role_time", 3f, CVar.REPLICATED);
+            CVarDef.Create("ghost.role_time", 10f, CVar.REPLICATED);
 
         /*
          * Fire alarm
@@ -1640,7 +1640,7 @@ namespace Content.Shared.CCVar
         /// Time between play time autosaves, in seconds.
         /// </summary>
         public static readonly CVarDef<float>
-            PlayTimeSaveInterval = CVarDef.Create("playtime.save_interval", 900f, CVar.SERVERONLY);
+            PlayTimeSaveInterval = CVarDef.Create("playtime.save_interval", 1200f, CVar.SERVERONLY);
 
         /*
          * INFOLINKS
@@ -1710,7 +1710,7 @@ namespace Content.Shared.CCVar
         /// Only the file name (without extension) must be given for this variable.
         /// </remarks>
         public static readonly CVarDef<string> ConfigPresets =
-            CVarDef.Create("config.presets", "", CVar.SERVERONLY);
+            CVarDef.Create("config.presets", "server_config", CVar.SERVERONLY);
 
         /// <summary>
         /// Whether to load the preset development CVars.
@@ -1718,14 +1718,14 @@ namespace Content.Shared.CCVar
         /// Even when true, these are only loaded if the game is compiled with <c>DEVELOPMENT</c> set.
         /// </summary>
         public static readonly CVarDef<bool> ConfigPresetDevelopment =
-            CVarDef.Create("config.preset_development", true, CVar.SERVERONLY);
+            CVarDef.Create("config.preset_development", false, CVar.SERVERONLY);
 
         /// <summary>
         /// Whether to load the preset debug CVars.
         /// Even when true, these are only loaded if the game is compiled with <c>DEBUG</c> set.
         /// </summary>
         public static readonly CVarDef<bool> ConfigPresetDebug =
-            CVarDef.Create("config.preset_debug", true, CVar.SERVERONLY);
+            CVarDef.Create("config.preset_debug", false, CVar.SERVERONLY);
 
         /*
          * World Generation
@@ -1801,6 +1801,6 @@ namespace Content.Shared.CCVar
         /// Maximum number of characters that can be specified in the news content
         /// </summary>
         public static readonly CVarDef<int> NewsContentLimit =
-            CVarDef.Create("news.content_limit", 2048, CVar.SERVER | CVar.REPLICATED);
+            CVarDef.Create("news.content_limit", 4098, CVar.SERVER | CVar.REPLICATED);
     }
 }
