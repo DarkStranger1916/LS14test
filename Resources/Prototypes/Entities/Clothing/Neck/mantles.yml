@@ -13,7 +13,7 @@
   parent: ClothingNeckBase
   id: ClothingNeckMantleQm
   name: мантия квартирмейстера
-  description: Декоративная драпировка цветов поставок плечах, символизирующая ваше мастерство в формировании накладных.
+  description: Декоративная драпировка цветов поставок на плечах, символизирующая ваше мастерство в формировании накладных.
   components:
   - type: Sprite
     sprite: /Textures/CustomeSprites/Clothing/Neck/Mantles/QM`s-alt.rsi

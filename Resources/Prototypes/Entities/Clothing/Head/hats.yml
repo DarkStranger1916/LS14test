@@ -16,9 +16,9 @@
   description: Опять работа?
   components:
   - type: Sprite
-    sprite: /Textures/CustomeSprite/Clothing/Head/Hats/Berets/QM`s-beret.rsi
+    sprite: /Textures/CustomeSprites/Clothing/Head/Hats/Berets/QM`s-beret.rsi
   - type: Clothing
-    sprite: /Textures/CustomeSprite/Clothing/Head/Hats/Berets/QM`s-beret.rsi
+    sprite: /Textures/CustomeSprites/Clothing/Head/Hats/Berets/QM`s-beret.rsi
 
 - type: entity
   parent: ClothingHeadBase

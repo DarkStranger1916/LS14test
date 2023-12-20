@@ -88,7 +88,7 @@
       node: plushie
       
 - type: entity
-  parent: PlushieGhost
+  parent: BasePlushie
   id: PlushieMelissa
   name: Плюшевая Мелисса
   description: Увидев данную плюшевую игрушку, вы наверняка захотите проверить наличие накладных в шкафчике, а также материалов на складе. От неё исходит приятный аромат корицы.
