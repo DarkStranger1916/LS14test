@@ -10,6 +10,10 @@ port = 1212
 bindto = "::,0.0.0.0"
 max_connections = 52
 
+[ic]
+
+flavor_text = true
+
 [status]
 # The status server is the TCP side, used by the launcher to determine engine version, etc.
 # To be clear: Disabling it makes the launcher unable to connect!
