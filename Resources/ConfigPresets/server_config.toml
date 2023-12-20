@@ -20,8 +20,8 @@ flavor_text = true
 enabled = true
 
 [game]
-hostname = "[RU][MRP+][18+]Space Craft 14"
-desc = "Добро пожаловать на Space Craft - игровой 18+ MRP+ сервер! \n Наша текущая сборка взята от ныне почившего сервера Lust Station, у нас много новых рас и ролей, а также дополнительная одежда. Присоединяйся и играй с нами."
+hostname = "[RU][HRP][18+]КосмиКрафт"
+desc = "Добро пожаловать на КосмиКрафт - игровой 18+ MRP+ сервер! \nНаша текущая сборка взята от ныне почившего сервера Lust Station, у нас много новых рас и ролей, а также дополнительная одежда. \nПрисоединяйся и играй с нами."
 map_pool = "DefaultMapPool"
 map_rotation = true
 role_timers = true
@@ -40,7 +40,7 @@ loginlocal = true
 
 [hub]
 advertise = true
-tags = "lang:ru,rp:med,18+"
+tags = "lang:ru,rp:hard,18+"
 server_url = ""
 hub_urls = "https://central.spacestation14.io/hub/"
 
