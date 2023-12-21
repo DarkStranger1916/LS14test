@@ -2,13 +2,13 @@
 path = "logs"
 format = "log_%(date)s-%(time)s.txt"
 level = 1
-enabled = false
+enabled = true
 
 [net]
-tickrate = 30
+tickrate = 15
 port = 1212
 bindto = "::,0.0.0.0"
-max_connections = 60
+max_connections = 42
 
 [ic]
 
@@ -20,14 +20,14 @@ flavor_text = true
 enabled = true
 
 [game]
-hostname = "[ERP][18+][MRP]Lust Station"
-desc = "Сборка Lust Station, Фиксы, одежда и рассы!"
+hostname = "[RU][HRP][18+]КосмиКрафт"
+desc = "Добро пожаловать на КосмиКрафт - игровой 18+ HRP сервер! \nНаша текущая сборка взята от ныне почившего сервера Lust Station, у нас много новых рас и ролей, а также дополнительная одежда. \nПрисоединяйся и играй с нами."
 map_pool = "DefaultMapPool"
 map_rotation = true
 role_timers = true
 lobbyenabled = true
-soft_max_players = 50
-maxplayers = 60
+soft_max_players = 30
+maxplayers = 42
 
 [rules]
 time = 10.0
@@ -40,7 +40,7 @@ loginlocal = true
 
 [hub]
 advertise = true
-tags = "lang:ru,HRP,18+,ERP"
+tags = "lang:ru,rp:hard,18+"
 server_url = ""
 hub_urls = "https://central.spacestation14.io/hub/"
 
@@ -61,3 +61,4 @@ arrivals = true
 
 [admin]
 see_own_notes = true
+
