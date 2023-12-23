@@ -2,10 +2,10 @@
 path = "logs"
 format = "log_%(date)s-%(time)s.txt"
 level = 1
-enabled = true
+enabled = false
 
 [net]
-tickrate = 15
+tickrate = 30
 port = 1212
 bindto = "::,0.0.0.0"
 max_connections = 42
@@ -33,14 +33,14 @@ maxplayers = 42
 time = 10.0
 
 [queue]
-enabled = true
+enabled = false
 
 [console]
 loginlocal = true
 
 [hub]
 advertise = true
-tags = "lang:ru,rp:hard,18+"
+tags = "lang:ru,rp:hard,18+,erp"
 server_url = ""
 hub_urls = "https://central.spacestation14.io/hub/"
 
