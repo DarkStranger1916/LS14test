@@ -1,0 +1,455 @@
+# by Malanisa :р
+# Entities\Structures\Decoration
+
+# Кристаллы (Structures)
+
+- type: entity
+  id: CrystalGreenSmall
+  parent: BaseStructure
+  name: зелёный кристалл
+  description: Сияющее плотное скопление минерала. Вы можете увидеть своё отражение в нем.
+  components:
+  - type: Sprite
+    sprite: Structures/Decoration/crystal.rsi #путь к текстуре
+    state: crystal_green_small
+  - type: Reflect
+    reflectProb: 0.5
+    reflects:
+    - Energy
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeCircle
+          radius: 0.45
+        density: 60
+        mask:
+        - MachineMask
+        layer:
+        - MidImpassable
+        - LowImpassable
+        - BulletImpassable
+        - Opaque
+  - type: PointLight
+    radius: 3
+    energy: 2
+    color: "#5ea34e"
+  - type: Damageable
+    damageContainer: Inorganic
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 30
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+      - !type:PlaySoundBehavior
+        sound:
+          collection: GlassBreak
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          CrystalShardGreen:
+            min: 0
+            max: 2
+
+- type: entity
+  id: CrystalGreen
+  parent: CrystalGreenSmall
+  name: зелёный кристалл
+  description: Сияющее плотное скопление минерала. Вы можете увидеть своё отражение в нем.
+  components:
+  - type: Sprite
+    state: crystal_green
+  - type: PointLight
+    radius: 3
+    energy: 2
+    color: "#5ea34e"
+
+- type: entity
+  id: CrystalGreenMedium
+  parent: CrystalGreenSmall
+  name: зелёный кристалл
+  description: It's a shiny green crystal.
+  components:
+  - type: Sprite
+    state: crystal_green_medium
+  - type: PointLight
+    radius: 3
+    energy: 2
+    color: "#5ea34e"
+
+- type: entity
+  id: CrystalPink
+  parent: CrystalGreenSmall
+  name: розовый кристалл
+  description: Сияющее плотное скопление минерала. Вы можете увидеть своё отражение в нем.
+  components:
+  - type: Sprite
+    state: crystal_pink
+  - type: PointLight
+    radius: 3
+    energy: 2
+    color: "#a84dab"
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 30
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+      - !type:PlaySoundBehavior
+        sound:
+          collection: GlassBreak
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          CrystalShardPink:
+            min: 0
+            max: 2
+
+- type: entity
+  id: CrystalPinkSmall
+  parent: CrystalPink
+  name: розовый кристалл
+  description: Сияющее плотное скопление минерала. Вы можете увидеть своё отражение в нем.
+  components:
+  - type: Sprite
+    state: crystal_pink_small
+  - type: PointLight
+    radius: 3
+    energy: 2
+    color: "#a84dab"
+
+- type: entity
+  id: CrystalPinkMedium
+  parent: CrystalPink
+  name: розовый кристалл
+  description: Сияющее плотное скопление минерала. Вы можете увидеть своё отражение в нем.
+  components:
+  - type: Sprite
+    state: crystal_pink_medium
+  - type: PointLight
+    radius: 3
+    energy: 2
+    color: "#a84dab"
+
+- type: entity
+  id: CrystalGrey
+  parent: CrystalGreenSmall
+  name: серый кристалл
+  description: Сияющее плотное скопление минерала. Вы можете увидеть своё отражение в нем.
+  components:
+  - type: Sprite
+    state: crystal_grey
+  - type: PointLight
+    radius: 3
+    energy: 2
+    color: "#969696"
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 30
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+      - !type:PlaySoundBehavior
+        sound:
+          collection: GlassBreak
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          CrystalShardGrey:
+            min: 0
+            max: 2
+
+- type: entity
+  id: CrystalGreySmall
+  parent: CrystalGrey
+  name: серый кристалл
+  description: Сияющее плотное скопление минерала. Вы можете увидеть своё отражение в нем.
+  components:
+  - type: Sprite
+    state: crystal_grey_small
+  - type: PointLight
+    radius: 3
+    energy: 2
+    color: "#969696"
+
+- type: entity
+  id: CrystalGreyMedium
+  parent: CrystalGrey
+  name: серый кристалл
+  description: Сияющее плотное скопление минерала. Вы можете увидеть своё отражение в нем.
+  components:
+  - type: Sprite
+    state: crystal_grey_medium
+  - type: PointLight
+    radius: 3
+    energy: 2
+    color: "#969696"
+
+- type: entity
+  id: CrystalOrange
+  parent: CrystalGreenSmall
+  name: оранжевый кристалл
+  description: Сияющее плотное скопление минерала. Вы можете увидеть своё отражение в нем.
+  components:
+  - type: Sprite
+    state: crystal_orange
+  - type: PointLight
+    radius: 3
+    energy: 2
+    color: "#96863b"
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 30
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+      - !type:PlaySoundBehavior
+        sound:
+          collection: GlassBreak
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          CrystalShardOrange:
+            min: 0
+            max: 2
+
+- type: entity
+  id: CrystalOrangeSmall
+  parent: CrystalOrange
+  name: оранжевый кристалл
+  description: Сияющее плотное скопление минерала. Вы можете увидеть своё отражение в нем.
+  components:
+  - type: Sprite
+    state: crystal_orange_small
+  - type: PointLight
+    radius: 3
+    energy: 2
+    color: "#96863b"
+
+- type: entity
+  id: CrystalOrangeMedium
+  parent: CrystalOrange
+  name: оранжевый кристалл
+  description: Сияющее плотное скопление минерала. Вы можете увидеть своё отражение в нем.
+  components:
+  - type: Sprite
+    state: crystal_orange_medium
+  - type: PointLight
+    radius: 3
+    energy: 2
+    color: "#96863b"
+
+- type: entity
+  id: CrystalBlue
+  parent: CrystalGreenSmall
+  name: синий кристалл
+  description: Сияющее плотное скопление минерала. Вы можете увидеть своё отражение в нем.
+  components:
+  - type: Sprite
+    state: crystal_blue
+  - type: PointLight
+    radius: 3
+    energy: 2
+    color: "#3d5cb3"
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 30
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+      - !type:PlaySoundBehavior
+        sound:
+          collection: GlassBreak
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          CrystalShardBlue:
+            min: 0
+            max: 2
+
+- type: entity
+  id: CrystalBlueSmall
+  parent: CrystalBlue
+  name: синий кристалл
+  description: Сияющее плотное скопление минерала. Вы можете увидеть своё отражение в нем.
+  components:
+  - type: Sprite
+    state: crystal_blue_small
+  - type: PointLight
+    radius: 3
+    energy: 2
+    color: "#3d5cb3"
+
+- type: entity
+  id: CrystalBlueMedium
+  parent: CrystalBlue
+  name: синий кристалл
+  description: Сияющее плотное скопление минерала. Вы можете увидеть своё отражение в нем.
+  components:
+  - type: Sprite
+    state: crystal_blue_medium
+  - type: PointLight
+    radius: 3
+    energy: 2
+    color: "#3d5cb3"
+
+- type: entity
+  id: CrystalCyan
+  parent: CrystalGreenSmall
+  name: голубой кристалл
+  description: Сияющее плотное скопление минерала. Вы можете увидеть своё отражение в нем.
+  components:
+  - type: Sprite
+    state: crystal_cyan
+  - type: PointLight
+    radius: 3
+    energy: 2
+    color: "#47a8a5"
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 30
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+      - !type:PlaySoundBehavior
+        sound:
+          collection: GlassBreak
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          CrystalShardCyan:
+            min: 0
+            max: 2
+
+- type: entity
+  id: CrystalCyanSmall
+  parent: CrystalCyan
+  name: голубой кристалл
+  description: Сияющее плотное скопление минерала. Вы можете увидеть своё отражение в нем.
+  components:
+  - type: Sprite
+    state: crystal_cyan_small
+  - type: PointLight
+    radius: 3
+    energy: 2
+    color: "#47a8a5"
+
+- type: entity
+  id: CrystalCyanMedium
+  parent: CrystalCyan
+  name: голубой кристалл
+  description: Сияющее плотное скопление минерала. Вы можете увидеть своё отражение в нем.
+  components:
+  - type: Sprite
+    state: crystal_cyan_medium
+  - type: PointLight
+    radius: 3
+    energy: 2
+    color: "#47a8a5"
+
+# Осколки (Items)
+
+- type: entity
+  parent: BaseItem
+  id: CrystalShardGreen
+  name: осколок зелёного кристалла
+  description: A small piece of crystal shard.
+  components:
+  - type: Sprite
+    sprite: /Textures/Structures/Decoration/crystal.rsi
+    state: crystalshard_green
+  - type: PointLight
+    radius: 1.5
+    energy: 3
+    color: "#5ea34e"
+  - type: Tag
+    tags:
+      - CrystalShardGreen 
+
+- type: entity
+  parent: CrystalShardGreen
+  id: CrystalShardPink
+  name: осколок розового кристалла
+  description: A small piece of crystal shard.
+  components:
+  - type: Sprite
+    state: crystalshard_pink
+  - type: PointLight
+    radius: 1.5
+    energy: 3
+    color: "#a84dab"
+  - type: Tag
+    tags:
+      - CrystalShardPink
+
+- type: entity
+  parent: CrystalShardGreen
+  id: CrystalShardOrange
+  name: осколок оранжевого кристалла
+  description: A small piece of crystal shard.
+  components:
+  - type: Sprite
+    state: crystalshard_orange
+  - type: PointLight
+    radius: 1.5
+    energy: 3
+    color: "#96863b"
+  - type: Tag
+    tags:
+      - CrystalShardOrange  
+
+- type: entity
+  parent: CrystalShardGreen
+  id: CrystalShardBlue
+  name: осколок синего кристалла
+  description: A small piece of crystal shard.
+  components:
+  - type: Sprite
+    state: crystalshard_blue
+  - type: PointLight
+    radius: 1.5
+    energy: 3
+    color: "#3d5cb3"
+  - type: Tag
+    tags:
+      - CrystalShardBlue  
+
+- type: entity
+  parent: CrystalShardGreen
+  id: CrystalShardCyan
+  name: осколок голубого кристалла
+  description: A small piece of crystal shard.
+  components:
+  - type: Sprite
+    state: crystalshard_cyan
+  - type: PointLight
+    radius: 1.5
+    energy: 3
+    color: "#47a8a5"
+  - type: Tag
+    tags:
+      - CrystalShardCyan
+
+- type: entity
+  parent: CrystalShardGreen
+  id: CrystalShardGrey
+  name: осколок серого кристалла
+  description: Небольшой осколок сиящего кристалла лишь слабо осветит ваш путь.
+  components:
+  - type: Sprite
+    state: crystalshard_grey
+  - type: PointLight
+    radius: 1.5
+    energy: 3
+    color: "#969696"
+  - type: Tag
+    tags:
+      - CrystalShardGrey   

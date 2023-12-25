@@ -480,12 +480,15 @@
       entities:
       - FloorLiquidPlasmaEntity
 
+# by Malanisa :р
+# путь к документу, где были введены изменения Resources\Prototypes\Procedural\biome_templates.yml
+
 # Caves
 - type: biomeTemplate
   id: Caves
   layers:
     - !type:BiomeEntityLayer
-      threshold: 0.8
+      threshold: 0.8 # Если будет слишком густой спавн, можно разбавить до 0.7
       noise:
         seed: 0
         noiseType: OpenSimplex2
@@ -493,11 +496,26 @@
       allowedTiles:
         - FloorAsteroidSand
       entities:
-        - CrystalGreen
-        - CrystalPink
+        - CrystalGreen 
+        - CrystalGreenSmall #new
+        - CrystalGreenMedium #new
+        - Stalagmite1 #new
+        - CrystalPink 
+        - CrystalPinkSmall #new
+        - CrystalPinkMedium #new
+        - Stalagmite2 #new
         - CrystalOrange
+        - CrystalOrangeSmall #new
+        - CrystalOrangeMedium #new
+        - Stalagmite3 #new
         - CrystalBlue
+        - CrystalBlueSmall #new
+        - CrystalBlueMedium #new
+        - Stalagmite4 #new
         - CrystalCyan
+        - CrystalCyanSmall #new
+        - CrystalCyanMedium #new
+        - Stalagmite5 #new
     - !type:BiomeEntityLayer
       threshold: -0.5
       invert: true
@@ -517,3 +535,4 @@
     - !type:BiomeTileLayer
       threshold: -1.0
       tile: FloorAsteroidSand
+

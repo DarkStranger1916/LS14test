@@ -1,0 +1,79 @@
+# by Malanisa :р
+
+- type: construction
+  name: Кулон из зелёного кристалла
+  id: CheapPendantGreen
+  graph: CheapPendantGreen
+  startNode: start
+  targetNode: pendantgreen
+  category: construction-category-misc
+  objectType: Item
+  description: Кулончик из сияющего кристалла и тонкого провода.
+  icon:
+    sprite: Clothing/Neck/Pendants/green.rsi #путь к текстуре
+    state: icon
+
+- type: construction
+  name: Кулон из оранжевого кристалла
+  id: CheapPendantOrange
+  graph: CheapPendantOrange
+  startNode: start
+  targetNode: pendantorange
+  category: construction-category-misc
+  objectType: Item
+  description: Кулончик из сияющего кристалла и тонкого провода.
+  icon:
+    sprite: Clothing/Neck/Pendants/orange.rsi #путь к текстуре
+    state: icon
+
+- type: construction
+  name: Кулон из розового кристалла
+  id: CheapPendantPink
+  graph: CheapPendantPink
+  startNode: start
+  targetNode: pendantpink
+  category: construction-category-misc
+  objectType: Item
+  description: Кулончик из сияющего кристалла и тонкого провода.
+  icon:
+    sprite: Clothing/Neck/Pendants/pink.rsi #путь к текстуре
+    state: icon
+
+- type: construction
+  name: Кулон из голубого кристалла
+  id: CheapPendantCyan
+  graph: CheapPendantCyan
+  startNode: start
+  targetNode: pendantcyan
+  category: construction-category-misc
+  objectType: Item
+  description: Кулончик из сияющего кристалла и тонкого провода.
+  icon:
+    sprite: Clothing/Neck/Pendants/cyan.rsi #путь к текстуре
+    state: icon
+
+- type: construction
+  name: Кулон из синего кристалла
+  id: CheapPendantBlue
+  graph: CheapPendantBlue
+  startNode: start
+  targetNode: pendantblue
+  category: construction-category-misc
+  objectType: Item
+  description: Кулончик из сияющего кристалла и тонкого провода.
+  icon:
+    sprite: Clothing/Neck/Pendants/blue.rsi #путь к текстуре
+    state: icon
+
+- type: construction
+  name: Кулон из серого кристалла
+  id: CheapPendantGrey
+  graph: CheapPendantGrey
+  startNode: start
+  targetNode: pendantgrey
+  category: construction-category-misc
+  objectType: Item
+  description: Кулончик из сияющего кристалла и тонкого провода.
+  icon:
+    sprite: Clothing/Neck/Pendants/grey.rsi #путь к текстуре
+    state: icon

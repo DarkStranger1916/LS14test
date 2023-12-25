@@ -1,0 +1,134 @@
+# by Malanisa :р
+# Resources\Prototypes\Entities\Clothing\Neck
+
+- type: entity
+  parent: ClothingNeckTieRed
+  id: ClothingCheapPendantGreen
+  name: кулон из зелёного кристалла
+  description: Кулончик из сияющего кристалла и тонкого провода.
+  components:
+  - type: Sprite
+    sprite: Clothing/Neck/Pendants/green.rsi #путь к текстуре
+  - type: Clothing
+    sprite: Clothing/Neck/Pendants/green.rsi #путь к текстуре
+  - type: Tag
+    tags:
+    - HamsterWearable
+    - WhitelistChameleon
+  - type: Construction
+    graph: CheapPendantGreen
+    node: pendantgreen
+  - type: PointLight
+    radius: 1.5
+    energy: 3
+    color: "#5ea34e"
+
+- type: entity
+  parent: ClothingNeckTieRed
+  id: ClothingCheapPendantOrange
+  name: кулон из оранжевого кристалла
+  description: Кулончик из сияющего кристалла и тонкого провода.
+  components:
+  - type: Sprite
+    sprite: Clothing/Neck/Pendants/orange.rsi #путь к текстуре
+  - type: Clothing
+    sprite: Clothing/Neck/Pendants/orange.rsi #путь к текстуре
+  - type: Tag
+    tags:
+    - HamsterWearable
+    - WhitelistChameleon
+  - type: Construction
+    graph: CheapPendantOrange
+    node: pendantorange
+  - type: PointLight
+    radius: 1.5
+    energy: 3
+    color: "#96863b"
+
+- type: entity
+  parent: ClothingNeckTieRed
+  id: ClothingCheapPendantPink
+  name: кулон из розового кристалла
+  description: Кулончик из сияющего кристалла и тонкого провода.
+  components:
+  - type: Sprite
+    sprite: Clothing/Neck/Pendants/pink.rsi #путь к текстуре
+  - type: Clothing
+    sprite: Clothing/Neck/Pendants/pink.rsi #путь к текстуре
+  - type: Tag
+    tags:
+    - HamsterWearable
+    - WhitelistChameleon
+  - type: Construction
+    graph: CheapPendantPink
+    node: pendantpink
+  - type: PointLight
+    radius: 1.5
+    energy: 3
+    color: "#a84dab"
+
+- type: entity
+  parent: ClothingNeckTieRed
+  id: ClothingCheapPendantCyan
+  name: кулон из голубого кристалла
+  description: Кулончик из сияющего кристалла и тонкого провода.
+  components:
+  - type: Sprite
+    sprite: Clothing/Neck/Pendants/cyan.rsi #путь к текстуре
+  - type: Clothing
+    sprite: Clothing/Neck/Pendants/cyan.rsi #путь к текстуре
+  - type: Tag
+    tags:
+    - HamsterWearable
+    - WhitelistChameleon
+  - type: Construction
+    graph: CheapPendantCyan
+    node: pendantcyan
+  - type: PointLight
+    radius: 1.5
+    energy: 3
+    color: "#47a8a5"
+
+- type: entity
+  parent: ClothingNeckTieRed
+  id: ClothingCheapPendantBlue
+  name: кулон из синего кристалла
+  description: Кулончик из сияющего кристалла и тонкого провода.
+  components:
+  - type: Sprite
+    sprite: Clothing/Neck/Pendants/blue.rsi #путь к текстуре
+  - type: Clothing
+    sprite: Clothing/Neck/Pendants/blue.rsi #путь к текстуре
+  - type: Tag
+    tags:
+    - HamsterWearable
+    - WhitelistChameleon
+  - type: Construction
+    graph: CheapPendantBlue
+    node: pendantblue
+  - type: PointLight
+    radius: 1.5
+    energy: 3
+    color: "#3d5cb3"
+
+- type: entity
+  parent: ClothingNeckTieRed
+  id: ClothingCheapPendantGrey
+  name: кулон из серого кристалла
+  description: Кулончик из сияющего кристалла и тонкого провода.
+  components:
+  - type: Sprite
+    sprite: Clothing/Neck/Pendants/grey.rsi #путь к текстуре
+  - type: Clothing
+    sprite: Clothing/Neck/Pendants/grey.rsi #путь к текстуре
+  - type: Tag
+    tags:
+    - HamsterWearable
+    - WhitelistChameleon
+  - type: Construction
+    graph: CheapPendantGrey
+    node: pendantgrey
+  - type: PointLight
+    radius: 1.5
+    energy: 3
+    color: "#969696"
