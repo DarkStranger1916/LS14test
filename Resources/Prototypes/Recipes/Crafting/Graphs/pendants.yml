@@ -71,7 +71,7 @@
       - tag: CrystalShardCyan
         name: Осколок голубого кристалла.
         icon:
-          sprite: Czeshuika/Structures/Decoration/crystal.rsi  #путь к текстуре
+          sprite: Structures/Decoration/crystal.rsi  #путь к текстуре
           state: crystalshard_cyan
         doAfter: 1
       - material: Cable

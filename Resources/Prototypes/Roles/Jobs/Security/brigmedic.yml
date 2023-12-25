@@ -25,19 +25,35 @@
   id: BrigmedicGear
   equipment:
     jumpsuit: ClothingUniformJumpsuitBrigmedic
-    outerClothing: ClothingOuterCoatAMG
+    outerClothing: ClothingOuterVestArmorMedSec
     back: ClothingBackpackBrigmedicFilled
-    shoes: ClothingShoesColorRed
-    gloves: ClothingHandsGlovesNitrile
+    shoes: ClothingShoesBootsJack
+    gloves: ClothingHandsGlovesColorBlack
     eyes: ClothingEyesHudMedical
-    head: ClothingHeadHatBeretBrigmedic
+    head: ClothingHeadHatBeretSecurityMedic
     id: BrigmedicPDA
     ears: ClothingHeadsetBrigmedic
     mask: ClothingMaskBreathMedicalSecurity
-    belt: ClothingBeltMedicalFilled
+    belt: ClothingBeltBrigmedicSecurityWebbing
     underwearb: ClothingUnderwearBottomBoxersWhite # Sirena-Underwear
   underweart: ClothingUnderwearTopBraSportsAlternative # Sirena-Underwear
   underwearb: ClothingUnderwearBottomPantiesWhite # Sirena-Underwear
   innerclothingskirt: ClothingUniformJumpskirtBrigmedic
   satchel: ClothingBackpackSatchelBrigmedicFilled
   duffelbag: ClothingBackpackDuffelBrigmedicFilled
+  
+- type: entity
+  name: РПС Бригмедика
+  id: ClothingBeltBrigmedicSecurityWebbing
+  parent: ClothingBeltSecurityWebbing
+  description: Уникальный, универсальный разгрузочный жилет с ремнями и поясом, может вмещать снаряжение службы безопасности.
+  - type: StorageFill
+    contents:
+      - id: Brutepack
+        amount: 2
+      - id: Ointment
+        amount: 1
+      - id: Bloodpack
+        amount: 1
+      - id: Gauze
+      - id: EmergencyMedipen 
