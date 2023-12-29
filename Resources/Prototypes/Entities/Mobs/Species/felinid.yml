@@ -1,7 +1,7 @@
 - type: entity
   save: false
   name: Urist Meowhand Felinid
-  parent: BaseMobSpeciesOrganic
+  parent: BaseMobSpecies
   id: BaseMobFelinid
   abstract: true
   components:
@@ -33,8 +33,6 @@
         - MobMask
         layer:
         - MobLayer
-  - type: Speech
-    speechSounds: Lizard
   - type: Vocal
     sounds:
       Male: UnisexReptilian
