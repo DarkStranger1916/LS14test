@@ -1,36 +1,85 @@
-- type: species
-  id: Felinid
-  name: species-name-felinid
-  roundStart: true
-  prototype: MobFelinid
-  sprites: MobHumanSprites
-  markingLimits: MobFelinidMarkingLimits
-  dollPrototype: MobFelinidDummy
-  skinColoration: HumanToned
+- type: entity
+  save: false
+  name: Urist Meowhand Felinid
+  parent: BaseMobSpeciesOrganic
+  id: BaseMobFelinid
+  abstract: true
+  components:
+  - type: HumanoidAppearance
+    species: Felinid
+  - type: Hunger
+  - type: Thirst
+  - type: Icon
+    sprite: Mobs/Species/Reptilian/parts.rsi
+    state: full
+  - type: Sprite
+    netsync: false
+    noRot: true
+    drawdepth: Mobs
+    scale: 0.8, 0.8
+  - type: Body
+    prototype: Felinid
+    requiredLegs: 2
+  - type: Fixtures
+    fixtures: # TODO: This needs a second fixture just for mob collisions.
+      fix1:
+        shape:
+          !type:PhysShapeCircle
+          radius: 0.35
+        # they r smaller
+        density: 120
+        restitution: 0.0
+        mask:
+        - MobMask
+        layer:
+        - MobLayer
+  - type: Speech
+    speechSounds: Lizard
+  - type: Vocal
+    sounds:
+      Male: UnisexReptilian
+      Female: UnisexReptilian
+      Unsexed: UnisexReptilian
+  - type: Damageable
+    damageContainer: Biological
+    damageModifierSet: Felinid
+  - type: MeleeWeapon
+    hidden: true
+    soundHit:
+      path: /Audio/Weapons/pierce.ogg
+    angle: 30
+    animation: WeaponArcPunch
+    damage:
+      types:
+        Slash: 2
+  - type: Temperature
+    heatDamageThreshold: 350
+    coldDamageThreshold: 275  #starting temperature damage treshold
+    currentTemperature: 310.15
+    specificHeat: 46
+    coldDamage:
+      types:
+        Cold : 0.2 #per second, scales with temperature & other constants
+    heatDamage:
+      types:
+        Heat : 0.2 #per second, scales with temperature & other constants
+  - type: MovementSpeedModifier
+    baseWalkSpeed : 2.7
+    baseSprintSpeed : 4.5
+  - type: Perishable
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      80: Critical
+      180: Dead
 
-- type: markingPoints
-  id: MobFelinidMarkingLimits
-  points:
-    Hair:
-      points: 1
-      required: false
-    FacialHair:
-      points: 1
-      required: false
-    Tail:
-      points: 1
-      required: true
-      defaultMarkings: [ FelinidTailBasic ]
-    HeadTop:
-      points: 1
-      required: true
-      defaultMarkings: [ FelinidEarsBasic ]
-    Chest:
-      points: 1
-      required: false
-    Legs:
-      points: 2
-      required: false
-    Arms:
-      points: 2
-      required: false
+- type: entity
+  save: false
+  name: Urist McHands
+  parent: MobHumanDummy
+  id: MobFelinidDummy
+  noSpawn: true
+  description: A dummy felinid meant to be used in character setup.
+  components:
+  - type: HumanoidAppearance
+    species: Felinid
