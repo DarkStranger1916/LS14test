@@ -1,5 +1,6 @@
 using Content.Shared.Actions;
 using Content.Shared.Bed.Sleep;
+using Content.Shared.Damage.ForceSay;
 using Content.Shared.Eye.Blinding.Systems;
 using Content.Shared.Speech;
 using Robust.Shared.Network;
