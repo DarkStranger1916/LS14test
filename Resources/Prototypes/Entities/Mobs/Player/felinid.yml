@@ -1,5 +1,5 @@
 - type: entity
-  save: false
+  noSpawn: true
   name: Urist McFelinid
   parent: BaseMobFelinid
   id: MobFelinid
