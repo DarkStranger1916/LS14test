@@ -1,0 +1,71 @@
+- type: entity
+  save: false
+  name: Urist MeowFelenid
+  parent: BaseMobSpeciesOrganic
+  description: OwO? Он/Она так и просится на ручки!
+  id: BaseMobFelenid
+  abstract: true
+  components:
+  - type: Hunger
+    starvationDamage:
+      types:
+        Cold: 1
+        Bloodloss: 1
+  - type: Item
+    size: 100
+  - type: MovementSpeedModifier
+    baseSprintSpeed: 5
+    baseWalkSpeed: 3
+  - type: Thirst
+  - type: Icon
+    sprite: Mobs/Species/Human/parts.rsi # It was like this beforehand, no idea why.
+    state: full
+  - type: Respirator
+    damage:
+      types:
+        Asphyxiation: 1
+    damageRecovery:
+      types:
+        Asphyxiation: -1.0
+  - type: Sprite
+    noRot: true
+    drawdepth: Mobs
+    scale: 0.8, 0.8
+  - type: Body
+    prototype: Felenid
+    requiredLegs: 2
+  - type: Butcherable
+    butcheringType: Spike
+    spawned:
+    - id: FoodMeatHuman
+      amount: 5
+  - type: Fixtures
+    fixtures: # TODO: This needs a second fixture just for mob collisions.
+      fix1:
+        shape:
+          !type:PhysShapeCircle
+          radius: 0.35
+        # they r smaller
+        density: 120
+        restitution: 0.0
+        mask:
+        - MobMask
+        layer:
+        - MobLayer
+  - type: Vocal
+    sounds:
+        Male: UnisexVulp
+        Female: UnisexVulp
+        Unsexed: UnisexVulp
+  - type: OwOAccent
+  - type: Speech
+    speechSounds: Alto
+  - type: Perishable
+
+- type: entity
+  parent: BaseSpeciesDummy
+  id: MobFelenidDummy
+  noSpawn: true
+  components:
+  - type: Sprite
+    scale: 0.8, 0.8

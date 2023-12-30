@@ -1,6 +1,6 @@
-- type: body
-  id: Felinid
-  name: "Felinid"
+﻿- type: body
+  id: Felenid
+  name: "Felenid"
   root: torso
   slots:
     head:

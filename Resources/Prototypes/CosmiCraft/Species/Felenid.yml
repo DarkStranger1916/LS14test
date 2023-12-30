@@ -1,0 +1,34 @@
+- type: species
+  id: Felenid
+  name: species-name-felenid
+  roundStart: true
+  prototype: MobFelenid
+  sprites: MobHumanSprites
+  markingLimits: MobFelenidMarkingLimits
+  dollPrototype: MobFelenidDummy
+  skinColoration: HumanToned
+
+- type: markingPoints
+  id: MobFelenidMarkingLimits
+  points:
+    Hair:
+      points: 1
+      required: false
+    FacialHair:
+      points: 1
+      required: false
+    Tail:
+      points: 1
+      required: false
+    HeadTop:
+      points: 1
+      required: false
+    Chest:
+      points: 1
+      required: false
+    Legs:
+      points: 4
+      required: false
+    Arms:
+      points: 4
+      required: false
