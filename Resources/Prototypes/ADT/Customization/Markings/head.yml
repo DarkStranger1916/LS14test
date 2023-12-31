@@ -2,6 +2,7 @@
   id: ADTAlldurak
   bodyPart: HeadTop
   markingCategory: HeadTop
+  speciesRestriction: [Human, Dwarf, KoboltSpecies, SlimePerson, Diona, Mentag, Moth, Arachnid]
   sponsorOnly: false
   sprites:
     - sprite: ADT/Customization/Markings/horns/head.rsi
@@ -11,6 +12,7 @@
   id: ADTAllhorn1
   bodyPart: HeadTop
   markingCategory: HeadTop
+  speciesRestriction: [Human, Dwarf, KoboltSpecies, SlimePerson, Diona, Mentag, Moth, Arachnid]
   sponsorOnly: false
   sprites:
     - sprite: ADT/Customization/Markings/horns/head.rsi
@@ -20,6 +22,7 @@
   id: ADTAllhorn2
   bodyPart: HeadTop
   markingCategory: HeadTop
+  speciesRestriction: [Human, Dwarf, KoboltSpecies, SlimePerson, Diona, Mentag, Moth, Arachnid]
   sponsorOnly: false
   sprites:
     - sprite: ADT/Customization/Markings/horns/head.rsi
@@ -29,6 +32,7 @@
   id: ADTAllhorn3
   bodyPart: HeadTop
   markingCategory: HeadTop
+  speciesRestriction: [Human, Dwarf, KoboltSpecies, SlimePerson, Diona, Mentag, Moth, Arachnid]
   sponsorOnly: false
   sprites:
     - sprite: ADT/Customization/Markings/horns/head.rsi
@@ -38,6 +42,7 @@
   id: ADTAllhorn4
   bodyPart: HeadTop
   markingCategory: HeadTop
+  speciesRestriction: [Human, Dwarf, KoboltSpecies, SlimePerson, Diona, Mentag, Moth, Arachnid]
   sponsorOnly: false
   sprites:
     - sprite: ADT/Customization/Markings/horns/head.rsi
@@ -47,6 +52,7 @@
   id: ADTAllhorn5
   bodyPart: HeadTop
   markingCategory: HeadTop
+  speciesRestriction: [Human, Dwarf, KoboltSpecies, SlimePerson, Diona, Mentag, Moth, Arachnid]
   sponsorOnly: false
   sprites:
     - sprite: ADT/Customization/Markings/horns/head.rsi
@@ -56,6 +62,7 @@
   id: ADTAllhorn6
   bodyPart: HeadTop
   markingCategory: HeadTop
+  speciesRestriction: [Human, Dwarf, KoboltSpecies, SlimePerson, Diona, Mentag, Moth, Arachnid]
   sponsorOnly: false
   sprites:
     - sprite: ADT/Customization/Markings/horns/head.rsi
@@ -65,6 +72,7 @@
   id: ADTAlllord
   bodyPart: HeadTop
   markingCategory: HeadTop
+  speciesRestriction: [Human, Dwarf, KoboltSpecies, SlimePerson, Diona, Mentag, Moth, Arachnid]
   sponsorOnly: false
   sprites:
     - sprite: ADT/Customization/Markings/horns/head.rsi
@@ -74,6 +82,7 @@
   id: ADTAlloldpain
   bodyPart: HeadTop
   markingCategory: HeadTop
+  speciesRestriction: [Human, Dwarf, KoboltSpecies, SlimePerson, Diona, Mentag, Moth, Arachnid]
   sponsorOnly: false
   sprites:
     - sprite: ADT/Customization/Markings/horns/head.rsi
@@ -83,6 +92,7 @@
   id: ADTAlltavrhorn
   bodyPart: HeadTop
   markingCategory: HeadTop
+  speciesRestriction: [Human, Dwarf, KoboltSpecies, SlimePerson, Diona, Mentag, Moth, Arachnid]
   sponsorOnly: false
   sprites:
     - sprite: ADT/Customization/Markings/horns/head.rsi
@@ -92,6 +102,7 @@
   id: ADTAlltelehorn
   bodyPart: HeadTop
   markingCategory: HeadTop
+  speciesRestriction: [Human, Dwarf, KoboltSpecies, SlimePerson, Diona, Mentag, Moth, Arachnid]
   sponsorOnly: false
   sprites:
     - sprite: ADT/Customization/Markings/horns/head.rsi
@@ -101,6 +112,7 @@
   id: ADTAllvampirehorn
   bodyPart: HeadTop
   markingCategory: HeadTop
+  speciesRestriction: [Human, Dwarf, KoboltSpecies, SlimePerson, Diona, Mentag, Moth, Arachnid]
   sponsorOnly: false
   sprites:
     - sprite: ADT/Customization/Markings/horns/head.rsi

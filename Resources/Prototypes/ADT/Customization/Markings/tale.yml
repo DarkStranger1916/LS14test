@@ -2,6 +2,7 @@
   id: ADTAllsuccubus
   bodyPart: Chest
   markingCategory: Chest
+  speciesRestriction: [Human, Dwarf, KoboltSpecies, SlimePerson, Diona, Mentag, Moth, Arachnid]
   sponsorOnly: false
   sprites:
     - sprite: ADT/Customization/Markings/horns/tale.rsi
