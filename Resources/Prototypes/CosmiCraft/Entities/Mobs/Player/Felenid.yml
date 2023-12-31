@@ -3,3 +3,7 @@
   name: Urist MeowFelenid
   parent: BaseMobFelenid
   id: MobFelenid
+  components:
+  - type: MovementSpeedModifier
+    baseWalkSpeed: 3
+    baseSprintSpeed: 5
