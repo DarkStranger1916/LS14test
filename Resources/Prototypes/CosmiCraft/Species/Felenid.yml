@@ -20,9 +20,11 @@
     Tail:
       points: 1
       required: false
+      defaultMarkings: [ CatTail ]
     HeadTop:
       points: 1
       required: false
+      defaultMarkings: [ CatEars ]
     Chest:
       points: 1
       required: false
