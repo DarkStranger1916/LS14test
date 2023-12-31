@@ -35,7 +35,8 @@
   id: Mrrr
   files:
   - /Audio/Animals/Mrrr.ogg
-
+  - /Audio/Animals/Mrrr2.ogg
+  
 - type: soundCollection
   id: MonkeyScreeches
   files:
