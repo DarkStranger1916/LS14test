@@ -16,7 +16,7 @@
     # Corvax-Localization-End
 
 - type: emote
-  id: CatMeow
+  id: CatMeows
   category: Vocal
   chatMessages: [мяукает] # Corvax-Localization
 

@@ -30,7 +30,7 @@
       collection: Whistles
     CatMeow:
       collection: CatMeows
-    CatHisses:
+    CatHiss:
       collection: CatHisses
       
 - type: emoteSounds
