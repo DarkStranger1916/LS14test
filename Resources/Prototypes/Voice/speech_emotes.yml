@@ -1,3 +1,39 @@
+- type: emote
+  id: CatMeow
+  category: Vocal
+  chatMessages: [Мяукает.] # CosmiCraft-Localization
+  chatTriggers:
+    - Мяукнул.
+    - Мяукнул
+    - Мяукает
+    - Мяукает.
+    - Мяу
+    - Мяу.
+    - Meow
+    - Meow.
+    - Мяукнула.
+    - Мяукнула
+    - Мяк
+    - Мяк.
+    - Мяяяу.
+    - Мяяяу
+    - Мяяя.
+    - Мяяя
+    - Мяя.
+    - Мяя
+    
+- type: emote
+  id: CatHiss
+  category: Vocal
+  chatMessages: [Шипит.] # CosmiCraft-Localization
+  chatTriggers:
+    - Шипит.
+    - Шипит
+    - Зашипел
+    - Зашипела
+    - Зашипел.
+    - Зашипела.
+
 # vocal emotes
 - type: emote
   id: Scream

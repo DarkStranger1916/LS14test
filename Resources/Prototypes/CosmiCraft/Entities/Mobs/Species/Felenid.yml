@@ -6,6 +6,11 @@
   id: BaseMobFelenid
   abstract: true
   components:
+  - type: HumanoidAppearance
+    species: Felenid
+  - type: Damageable
+    damageContainer: Biological
+    damageModifierSet: Felenid
   - type: Hunger
     starvationDamage:
       types:
@@ -54,9 +59,9 @@
         - MobLayer
   - type: Vocal
     sounds:
-        Male: UnisexVulp
-        Female: UnisexVulp
-        Unsexed: UnisexVulp
+        Male: MaleFelenid
+        Female: FemaleFelenid
+        Unsexed: MaleFelenid
   - type: OwOAccent
   - type: Speech
     speechSounds: Alto
@@ -69,3 +74,5 @@
   components:
   - type: Sprite
     scale: 0.8, 0.8
+  - type: HumanoidAppearance
+    species: Felenid
