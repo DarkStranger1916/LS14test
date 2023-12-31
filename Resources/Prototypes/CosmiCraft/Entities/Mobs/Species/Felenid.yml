@@ -18,6 +18,7 @@
         Bloodloss: 1
   - type: Item
     size: 100
+  - type: MultiHandedItem
   - type: MovementSpeedModifier
     baseSprintSpeed : 5
     baseWalkSpeed : 3
