@@ -32,7 +32,7 @@
       collection: CatMeows
     CatHiss:
       collection: CatHisses
-    Mrrr:
+    CatPurrs:
       collection: Mrrr
       
 - type: emoteSounds
@@ -68,7 +68,7 @@
       collection: CatMeows
     CatHiss:
       collection: CatHisses
-    Mrrr:
+    CatPurrs:
       collection: Mrrr
 
 # species
