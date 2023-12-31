@@ -21,7 +21,18 @@
     - Мяяя
     - Мяя.
     - Мяя
-    
+
+- type: emote
+  id: CatPurrs
+  category: Vocal
+  chatMessages: [Мурчит.] # CosmiCraft-Localization
+  chatTriggers:
+    - Мурчит
+    - Муркнул
+    - Муркнула
+    - Муркнула.
+    - Муркнул.
+
 - type: emote
   id: CatHiss
   category: Vocal

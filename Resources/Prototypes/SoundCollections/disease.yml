@@ -24,11 +24,17 @@
   id: CatMeows
   files:
   - /Audio/Animals/cat_meow.ogg
+  - /Audio/Animals/cat_meow2.ogg
 
 - type: soundCollection
   id: CatHisses
   files:
   - /Audio/Animals/cat_hiss.ogg
+
+- type: soundCollection
+  id: Mrrr
+  files:
+  - /Audio/Animals/Mrrr.ogg
 
 - type: soundCollection
   id: MonkeyScreeches
