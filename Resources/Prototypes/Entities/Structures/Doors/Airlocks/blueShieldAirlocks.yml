@@ -11,7 +11,7 @@
     
 - type: entity
   parent: Airlock
-  id: AirlockMaint
+  id: AirlockBlueShieldMaint
   name: maintenance hatch
   components:
   - type: Sprite
