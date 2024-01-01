@@ -3,7 +3,7 @@
   alias:
     - survival
   name: survival-title
-  showInVote: false # secret
+  showInVote: true # secret
   description: survival-description
   rules:
     - RampingStationEventScheduler
@@ -29,6 +29,16 @@
   description: secret-description
   rules:
     - Secret
+    
+- type: gamePreset
+  id: Passive
+  alias:
+  - extended
+  - shittersafari
+  name: passive-title
+  showInVote: true
+  description: extended-description
+  rules:
 
 - type: gamePreset
   id: Sandbox
