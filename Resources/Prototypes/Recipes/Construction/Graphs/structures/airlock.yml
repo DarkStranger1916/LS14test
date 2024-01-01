@@ -234,9 +234,6 @@
         amount: 2
       conditions:
       - !type:WirePanel {}
-      - !type:HasTag
-        invert: true
-        tag: GlassAirlock
       steps:
       - tool: Prying
         doAfter: 4
@@ -248,9 +245,6 @@
         amount: 2
       conditions:
       - !type:WirePanel {}
-      - !type:HasTag
-        invert: true
-        tag: Airlock
       steps:
       - tool: Prying
         doAfter: 4
@@ -262,9 +256,6 @@
         amount: 2
       conditions:
       - !type:WirePanel {}
-      - !type:HasTag
-        invert: true
-        tag: HighSecDoor
       steps:
       - tool: Prying
         doAfter: 4
@@ -305,9 +296,6 @@
         amount: 2
       conditions:
       - !type:WirePanel {}
-      - !type:HasTag
-        invert: true
-        tag: GlassAirlock
       steps:
       - tool: Prying
         doAfter: 4
@@ -319,9 +307,6 @@
         amount: 2
       conditions:
       - !type:WirePanel {}
-      - !type:HasTag
-        invert: true
-        tag: Airlock
       steps:
       - tool: Prying
         doAfter: 4
@@ -333,9 +318,6 @@
         amount: 2
       conditions:
       - !type:WirePanel {}
-      - !type:HasTag
-        invert: true
-        tag: HighSecDoor
       steps:
       - tool: Prying
         doAfter: 4
