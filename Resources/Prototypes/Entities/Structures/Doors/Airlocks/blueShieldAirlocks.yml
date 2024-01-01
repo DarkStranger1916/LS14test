@@ -1,0 +1,22 @@
+- type: entity
+  parent: Airlock
+  id: AirlockBlueShield
+  components:
+  - type: Sprite
+    sprite: Structures/Doors/Airlocks/Standard/command.rsi
+  - type: WiresPanelSecurity
+    securityLevel: medSecurity
+  - type: AccessReader
+    access: [["BlueShieldAcess"]]
+    
+- type: entity
+  parent: Airlock
+  id: AirlockMaint
+  name: maintenance hatch
+  components:
+  - type: Sprite
+    sprite: Structures/Doors/Airlocks/Standard/maint.rsi
+  - type: WiresPanelSecurity
+    securityLevel: medSecurity
+  - type: AccessReader
+    access: [["BlueShieldAcess"]]

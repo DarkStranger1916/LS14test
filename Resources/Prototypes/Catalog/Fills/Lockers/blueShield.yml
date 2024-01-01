@@ -1,0 +1,59 @@
+- type: entity
+  id: LockerBlueShield
+  parent: LockerBaseSecure
+  name: head of personnel's locker
+  components:
+  - type: Appearance
+  - type: EntityStorageVisuals
+    stateBaseClosed: hop
+    stateDoorOpen: hop_open
+    stateDoorClosed: hop_door
+  - type: AccessReader
+    access: [["BlueShieldAcess"]]
+
+- type: entity
+  id: LockerBlueShieldBig
+  suffix: Filled, Big
+  parent: LockerBlueShield
+  components:
+  - type: StorageFill
+    contents:
+      - id: MedkitCombatFilled
+      - id: MedkitBruteFilled
+      - id: ClothingBeltSecurityFilled
+      - id: ClothingShoesBootsJack
+      - id: ClothingEyesGlassesSecurity
+      - id: MagazinePistolSubMachineGunRubber
+        amount: 3
+      - id: TrackingImplanter
+        amount: 2
+      - id: TelescopicShield
+
+- type: entity
+  id: LockerBlueShieldMedium
+  suffix: Filled, Medium
+  parent: LockerBlueShield
+  components:
+  - type: StorageFill
+    contents:
+      - id: MedkitCombatFilled
+      - id: ClothingBeltSecurityFilled
+      - id: ClothingShoesBootsJack
+      - id: ClothingEyesGlassesSecurity
+      - id: MagazinePistolSubMachineGunRubber
+        amount: 2
+      - id: TrackingImplanter
+        amount: 1
+      
+- type: entity
+  id: LockerBlueShieldSmall
+  suffix: Filled, Small
+  parent: LockerBlueShield
+  components:
+  - type: StorageFill
+    contents:
+      - id: MedkitCombatFilled
+      - id: ClothingShoesBootsJack
+      - id: ClothingEyesGlassesSecurity
+      - id: MagazinePistolSubMachineGunRubber
+        amount: 1
