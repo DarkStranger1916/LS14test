@@ -62,7 +62,7 @@
   - type: WiresPanel
   - type: Wires
     BoardName: wires-board-name-chemmaster
-    LayoutId: chem_master
+    layoutId: chem_master
   - type: Machine
     board: ChemMasterMachineCircuitboard
   - type: ContainerContainer

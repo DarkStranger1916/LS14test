@@ -11,8 +11,8 @@ using Robust.Client.UserInterface.RichText;
 
 namespace Content.Client.Paper.UI
 {
-    [GenerateTypedNameReferences]
-    public sealed partial class PaperWindow : BaseWindow
+    [GenerateTypedNameReferences, Virtual]
+    public partial class PaperWindow : BaseWindow
     {
         private static Color DefaultTextColor = new(25, 25, 25);
 

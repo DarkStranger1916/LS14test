@@ -37,6 +37,9 @@
     closedDrawDepth: BlastDoors
     bumpOpen: false
     clickOpen: false
+    canCrush: true
+    crushStaticEntities: false
+    performCollisionCheck: false
     closeTimeOne: 0.2
     closeTimeTwo: 1.2
     openTimeOne: 1.2
@@ -59,11 +62,12 @@
       type: WiresBoundUserInterface
   - type: Airtight
     fixVacuum: true
+    noAirWhenFullyAirBlocked: false
   - type: RadiationBlocker
     resistance: 2
   - type: Damageable
-    damageContainer: Inorganic
-    damageModifierSet: Metallic
+    damageContainer: StructuralInorganic
+    damageModifierSet: StrongMetallic
   - type: Destructible
     thresholds:
     - trigger:
@@ -139,6 +143,8 @@
     node: ShuttersRadiation
     containers:
     - board
+  - type: RadiationBlocker
+    resistance: 4
 
 - type: entity
   id: ShuttersRadiationOpen
@@ -172,8 +178,8 @@
     node: ShuttersWindow
     containers:
     - board
-  - type: StaticPrice
-    price: 150
+  - type: RadiationBlocker
+    resistance: 1
 
 - type: entity
   id: ShuttersWindowOpen
@@ -188,8 +194,6 @@
     airBlocked: false
   - type: RadiationBlocker
     enabled: false
-  - type: StaticPrice
-    price: 150
 
 # Frame for construction
 - type: entity
