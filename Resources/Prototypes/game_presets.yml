@@ -29,16 +29,6 @@
   description: secret-description
   rules:
     - Secret
-    
-- type: gamePreset
-  id: Passive
-  alias:
-  - extended
-  - shittersafari
-  name: passive-title
-  showInVote: true
-  description: extended-description
-  rules:
 
 - type: gamePreset
   id: Sandbox
