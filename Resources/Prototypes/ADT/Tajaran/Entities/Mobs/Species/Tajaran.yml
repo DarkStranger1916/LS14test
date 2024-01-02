@@ -48,12 +48,7 @@
         0: Alive
         80: Critical
         200: Dead
-    - type: Vocal
-      sounds:
-        Male: MaleFelenid
-        Female: FemaleFelenid
-        Unsexed: MaleFelenid
-
+        
 - type: entity
   save: false
   name: Tajaran McHands
