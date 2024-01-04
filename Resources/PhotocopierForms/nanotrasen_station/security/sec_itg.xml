@@ -4,14 +4,19 @@
   <PrototypeId>PaperNtFormSec</PrototypeId>
   <EntityName>форма НТ-СБ-РОЗ</EntityName>
   <PhotocopierTitle>Постановление о розыске</PhotocopierTitle>
-  <Content><![CDATA[[bold]Форма НТ-СБ-РОЗ[/bold]
-[head=2]Постановление о розыске[/head]
-
-[italic]Дата: ДЕНЬ/МЕСЯЦ/ГОД[/italic]
-
+  <Content><![CDATA[[color=#1b487e]███░███░░░░██░░░░[/color]
+[color=#1b487e]░██░████░░░██░░░░[/color]      [head=3]Бланк документа[/head]
+[color=#1b487e]░░█░██░██░░██░█░░[/color]               [head=3]NanoTrasen[/head]
+[color=#1b487e]░░░░██░░██░██░██░[/color] [bold]Station XX-000 ПД-СБ[/bold]
+[color=#1b487e]░░░░██░░░████░███[/color]
+=============================================
+                     ПОСТАНОВЛЕНИЕ О РОЗЫСКЕ
+=============================================
+Время от начала смены и дата: ДД:ЧЧ:ММ:СС/XX|XX|3024
 Причина розыска:
 Имя подозреваемого: (ПОЛНОЕ ИМЯ)
 Дополнительные замечания:
 
-[italic]Место для печатей[/italic]]]></Content>
+=============================================
+                            [italic]Место для печатей[/italic]]]></Content>
 </Form>

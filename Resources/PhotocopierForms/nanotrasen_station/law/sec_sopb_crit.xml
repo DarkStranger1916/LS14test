@@ -4,10 +4,14 @@
   <PrototypeId>PaperNtFormLaw</PrototypeId>
   <EntityName>форма НТ-СБ-КНСРП</EntityName>
   <PhotocopierTitle>Сообщение о критическом нарушении</PhotocopierTitle>
-  <Content><![CDATA[[bold]Форма НТ-СБ-КНСРП[/bold]
-[head=2]Сообщение о критическом нарушении[/head]
-
-[italic]Дата: ДЕНЬ/МЕСЯЦ/ГОД[/italic]
+  <Content><![CDATA[[color=#1b487e]███░███░░░░██░░░░[/color]
+[color=#1b487e]░██░████░░░██░░░░[/color]      [head=3]Бланк документа[/head]
+[color=#1b487e]░░█░██░██░░██░█░░[/color]               [head=3]NanoTrasen[/head]
+[color=#1b487e]░░░░██░░██░██░██░[/color] [bold]Station XX-000 ЮР[/bold]
+[color=#1b487e]░░░░██░░░████░███[/color]
+=============================================
+     СООБЩЕНИЕ О КРИТИЧЕСКОМ НАРУШЕНИИ
+=============================================
 
 [bold]Имя нарушителя [italic](один на бланк)[/italic]:[/bold] (ПОЛНОЕ ИМЯ)
 [bold]Должность нарушителя:[/bold] (ПОЛНОЕ НАЗВАНИЕ ДОЛЖНОСТИ)
@@ -15,6 +19,6 @@
 
 [bold]Дополнительные сведения:[/bold]
 
-
-[italic]Место для печати АВД[/italic]]]></Content>
+=============================================
+                            [italic]Место для печатей[/italic]]]></Content>
 </Form>
