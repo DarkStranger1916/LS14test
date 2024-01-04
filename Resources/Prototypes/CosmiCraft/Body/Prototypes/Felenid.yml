@@ -11,17 +11,17 @@
         brain: OrganHumanBrain
         eyes: OrganHumanEyes
     torso:
-      part: TorsoHuman
+      part: TorsoReptilian
       connections:
       - left_arm
       - right_arm
       - left_leg
       - right_leg
       organs:
-        heart: OrganHumanHeart
+        heart: OrganAnimalHeart
         lungs: OrganHumanLungs
         stomach: OrganReptilianStomach
-        liver: OrganHumanLiver
+        liver: OrganAnimalLiver
         kidneys: OrganHumanKidneys
     right_arm:
       part: RightArmHuman
