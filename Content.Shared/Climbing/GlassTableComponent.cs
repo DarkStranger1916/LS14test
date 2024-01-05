@@ -1,6 +1,7 @@
 using Content.Shared.Damage;
+using Content.Shared.Climbing.ClimbSystema;
 
-namespace Content.Server.Climbing.Components;
+namespace Content.Shared.Climbing;
 
 /// <summary>
 ///     Glass tables shatter and stun you when climbed on.

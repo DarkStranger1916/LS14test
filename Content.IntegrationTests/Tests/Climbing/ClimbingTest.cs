@@ -1,8 +1,8 @@
 #nullable enable
 using Content.IntegrationTests.Tests.Interaction;
-using Content.Server.Climbing;
-using Content.Shared.Climbing;
 using Robust.Shared.Maths;
+using ClimbingComponent = Content.Shared.Climbing.ClimbingComponent;
+using Content.Shared.Climbing.ClimbSystema;
 
 namespace Content.IntegrationTests.Tests.Climbing;
 

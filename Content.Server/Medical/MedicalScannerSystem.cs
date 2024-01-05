@@ -1,6 +1,7 @@
-using Content.Server.Climbing;
 using Content.Server.Cloning;
 using Content.Server.Medical.Components;
+using Content.Shared.Climbing;
+using Content.Shared.Climbing.ClimbSystema;
 using Content.Shared.Destructible;
 using Content.Shared.ActionBlocker;
 using Content.Shared.DragDrop;

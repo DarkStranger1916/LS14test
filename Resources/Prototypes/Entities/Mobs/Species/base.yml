@@ -8,6 +8,8 @@
   id: BaseMobSpecies
   abstract: true
   components:
+  - type: CanEscapeInventory # Возможность поднятия на руки! УРААА!
+  - type: Carriable # Возможность поднятия на руки! УРААА!
   - type: Sprite
     layers:
     - map: [ "enum.HumanoidVisualLayers.Chest" ]

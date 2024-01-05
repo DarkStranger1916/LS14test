@@ -1,41 +1,36 @@
+using System.Numerics;
 using Robust.Shared.GameStates;
-using Robust.Shared.Serialization;
+using Robust.Shared.Serialization.TypeSerializers.Implementations.Custom;
 
 namespace Content.Shared.Climbing;
 
-[RegisterComponent, NetworkedComponent]
+[RegisterComponent, NetworkedComponent, AutoGenerateComponentState]
 public sealed partial class ClimbingComponent : Component
 {
     /// <summary>
     /// Whether the owner is climbing on a climbable entity.
     /// </summary>
-    [ViewVariables]
-    public bool IsClimbing { get; set; }
+    [AutoNetworkedField, DataField]
+    public bool IsClimbing;
 
     /// <summary>
     /// Whether the owner is being moved onto the climbed entity.
     /// </summary>
-    [ViewVariables]
-    public bool OwnerIsTransitioning { get; set; }
+    [AutoNetworkedField, DataField(customTypeSerializer:typeof(TimeOffsetSerializer))]
+    public TimeSpan? NextTransition;
 
     /// <summary>
-    ///     We'll launch the mob onto the table and give them at least this amount of time to be on it.
+    /// Direction to move when transition.
     /// </summary>
-    public const float BufferTime = 0.3f;
+    [AutoNetworkedField, DataField]
+    public Vector2 Direction;
 
-    [ViewVariables]
-    public Dictionary<string, int> DisabledFixtureMasks { get; } = new();
+    /// <summary>
+    /// How fast the entity is moved when climbing.
+    /// </summary>
+    [DataField]
+    public float TransitionRate = 5f;
 
-    [Serializable, NetSerializable]
-    public sealed class ClimbModeComponentState : ComponentState
-    {
-        public ClimbModeComponentState(bool climbing, bool isTransitioning)
-        {
-            Climbing = climbing;
-            IsTransitioning = isTransitioning;
-        }
-
-        public bool Climbing { get; }
-        public bool IsTransitioning { get; }
-    }
+    [AutoNetworkedField, DataField]
+    public Dictionary<string, int> DisabledFixtureMasks = new();
 }
