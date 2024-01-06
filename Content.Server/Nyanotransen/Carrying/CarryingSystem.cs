@@ -215,7 +215,7 @@ namespace Content.Server.Carrying
             if (mod != 0)
                 length /= mod;
 
-            if (length >= TimeSpan.FromSeconds(9))
+            if (length >= TimeSpan.FromSeconds(5))
             {
                 _popupSystem.PopupEntity(Loc.GetString("carry-too-heavy"), carried, carrier, Shared.Popups.PopupType.SmallCaution);
                 return;

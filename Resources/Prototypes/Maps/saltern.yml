@@ -44,7 +44,7 @@
             MedicalIntern: [ 4, 4 ]
             #science
             ResearchDirector: [ 1, 1 ]
-            SeniorResearcher: [1, 1 ]
+            SeniorResearcher: [ 1, 1 ]
             Scientist: [ 3, 3 ]
             ResearchAssistant: [ 2, 2 ]
             Borg: [ 2, 2 ]
