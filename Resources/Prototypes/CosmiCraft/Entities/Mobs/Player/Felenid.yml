@@ -5,5 +5,5 @@
   id: MobFelenid
   components:
   - type: MovementSpeedModifier
-    baseWalkSpeed : 3
-    baseSprintSpeed : 5
+    baseWalkSpeed : 2.9
+    baseSprintSpeed : 4.8

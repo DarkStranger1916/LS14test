@@ -15,13 +15,7 @@
     starvationDamage:
       types:
         Cold: 1
-        Bloodloss: 1
-  - type: Item
-    size: 100
-  - type: MultiHandedItem
-  - type: MovementSpeedModifier
-    baseWalkSpeed : 2.9
-    baseSprintSpeed : 4.8
+        Bloodloss: 
   - type: Thirst
   - type: Icon
     sprite: Mobs/Species/Human/parts.rsi # It was like this beforehand, no idea why.
